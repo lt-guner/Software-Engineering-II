@@ -1,1 +1,1 @@
-# OSU-CS362-Winter-2022
+# OSU CS362 Winter 2022
