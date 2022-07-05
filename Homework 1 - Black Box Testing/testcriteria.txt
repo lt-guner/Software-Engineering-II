@@ -1,0 +1,37 @@
+CardLength:
+    0. [Error]
+    14.
+    15. [property fifteen]
+    16. [property sixteen]
+    17.
+
+CardType:
+    Visa. [property vi]
+    Mastercard. [property mc]
+    AmericanExpress. [property ae]
+
+checksum:
+    Valid. [property valid]
+    NotValid.
+
+
+Prefix:
+    1. [error]
+    6. [error]
+    7. [error]
+    8. [error]
+    9. [error]
+    4. [if vi] [if sixteen] [if valid]
+    34. [if ae] [if fifteen] [if valid]
+    37. [if ae] [if fifteen] [if valid]
+    50. [error]
+    51. [if mc] [if sixteen] [if valid]
+    52. [if mc] [if sixteen] [if valid]
+    53. [if mc] [if sixteen] [if valid]
+    54. [if mc] [if sixteen] [if valid]
+    55. [if mc] [if sixteen] [if valid]
+    56. [error]
+    2220. [error]
+    2221. [if mc] [if sixteen] [if valid]
+    2720. [if mc] [if sixteen] [if valid]
+    2721. [error]
